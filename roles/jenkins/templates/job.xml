@@ -17,7 +17,7 @@
             <configVersion>2</configVersion>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>https://github.com/Dimpulsunayana/frontend</url>
+                    <url>https://github.com/Dimpulsunayana/{{item}}</url>
                     <credentialsId>da7d976a-c81e-49b8-8285-fb87cb8a0c34</credentialsId>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>

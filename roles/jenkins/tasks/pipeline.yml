@@ -1,0 +1,13 @@
+- name: copy config file
+  ansible.builtin.template:
+    src: job.xml
+    dest: /tmp/job.xml
+
+- name: Create a jenkins build
+  community.general.jenkins_build:
+    config: "{{ lookup('file', '/tmp/job.xml') }}"
+    name: "{{item}}"
+    state: present
+    user: admin
+    password: "{{jenkins_password}}"
+    url: http://172.31.1.36:8080
