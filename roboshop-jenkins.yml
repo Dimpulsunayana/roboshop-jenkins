@@ -3,3 +3,6 @@
   connection: local
   roles:
     - jenkins
+#sudo yum install python3.9
+#sudo yum install gcc -y
+#sudo pip3.9 install jenkins
