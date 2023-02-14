@@ -1,6 +1,4 @@
 - name: create jenkins jobs
   ansible.builtin.include_tasks: pipeline.yml
   loop:
-    - frontend
-    - catalogue
-    - cart
+    - {name: "frontend" , dir: "CIPipelines"}
