@@ -1,7 +1,7 @@
-#- name: copy config file
-#  ansible.builtin.template:
-#    src: jobs.xml
-#    dest: /tmp/jobs-{{item.name}}.xml
+- name: copy config file
+  ansible.builtin.template:
+    src: jobs.xml
+    dest: /tmp/jobs-{{item.name}}.xml
 
 - name: Create a {{item.dir}}/{{item.name}}
   community.general.jenkins_job:
