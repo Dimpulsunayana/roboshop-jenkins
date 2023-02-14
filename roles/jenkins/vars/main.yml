@@ -6,3 +6,5 @@ pipeline_jobs:
  - {name: "shipping" , dir: "CIPipelines"}
  - {name: "payment" , dir: "CIPipelines"}
 
+folders:
+ - CIPipelines
