@@ -1,4 +1,4 @@
 - name: create jenkins jobs
   ansible.builtin.include_tasks: pipeline.yml
   loop:
-    - user
+    - frontend
