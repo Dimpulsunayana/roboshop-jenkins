@@ -6,7 +6,7 @@ echo '
   "Changes": [{
     "Action": "UPSERT",
     "ResourceRecordSet": {
-      "Name": "jenkins.devopsb70.online",
+      "Name": "jenkins-latest.dimpul.online",
       "Type": "A",
       "TTL": 15,
       "ResourceRecords": [{ "Value": "IPADDRESS"}]
@@ -15,6 +15,7 @@ echo '
 
 ZONE_ID="Z02967263P9C2N61Q5ZUW"
 aws route53 change-resource-record-sets --hosted-zone-id ${ZONE_ID} --change-batch file:///tmp/jenkins.json | jq .
+
 
 
 
