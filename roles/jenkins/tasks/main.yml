@@ -8,5 +8,5 @@
   loop: "{{ folders }}"
 
 - name: create jenkins jobs
-  ansible.builtin.include_tasks: pipeline.yml
+  ansible.builtin.include_tasks: mbranch-pipeline.yml
   loop: "{{ pipeline_jobs }}"
