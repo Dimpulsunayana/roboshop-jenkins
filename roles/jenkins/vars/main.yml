@@ -11,4 +11,4 @@ folders:
  - infrastructure
 
 sbranch_pipeline_jobs:
- - {name: "roboshop-infrastructure" , dir: "infrastructure"}
+ - {name: "roboshop-infra" , dir: "infrastructure"}
