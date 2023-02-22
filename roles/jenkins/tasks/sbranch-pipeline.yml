@@ -13,7 +13,7 @@
     dest: /tmp/jobs.xml
   when: out.failed | bool
 
-- name: Create a {{item.dir}}/{{item.name}}
+- name: Create a {{item.dir}}/{{item.name}} job
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/jobs.xml') }}"
     name: "{{item.dir}}/{{item.name}}"
